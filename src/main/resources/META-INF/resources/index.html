@@ -115,7 +115,17 @@
 <div class="container">
     <div class="left-column">
         <p class="lead"> Congratulations, you have created a new Quarkus cloud application.</p>
-
+        <h2>Create/Update User</h2>
+        <form id="userForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="correoElectronico">Correo Electrónico:</label>
+            <input type="text" id="correoElectronico" name="correoElectronico"><br><br>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena"><br><br>
+            <button type="button" onclick="crearUsuario()">Crear Usuario</button>
+            <button type="button" onclick="actualizarUsuario()">Actualizar Usuario</button>
+        </form>
         <h2>What is this page?</h2>
 
         <p>This page is served by Quarkus. The source is in
